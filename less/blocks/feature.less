@@ -1,0 +1,47 @@
+.feature {
+  padding: 25px 20px 40px 20px;
+  background-color: @white;
+
+  &__item {
+    position: relative;
+    padding-left: 50px;
+  }
+
+  &__item:last-child &__descr {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    .opn-bold;
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  &__title:before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    top: -10px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  &__title--house:before {
+    background: url(../../img/feature__icon--house.png) no-repeat center;
+  }
+
+  &__title--present:before {
+    background: url(../../img/feature__icon--present.png) no-repeat center;
+  }
+
+  &__title--burger:before {
+    background: url(../../img/feature__icon--burger.png) no-repeat center;
+  }
+
+  &__descr {
+    line-height: 21px;
+    margin-bottom: 25px;
+  }
+}

@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
@@ -20,11 +20,11 @@ button:focus {
 }
 /* fonts files */
 .opn-bold {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
 }
 .opn-reg {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
 }
 /*colors*/
@@ -76,7 +76,7 @@ button:focus {
   padding: 8px 0;
   box-sizing: border-box;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   line-height: 40px;
   color: #fff;
@@ -112,6 +112,9 @@ button:focus {
 }
 .main-nav__item--logo a:active {
   background: none;
+}
+.main-nav__item--logo a img {
+  height: 72px;
 }
 .main-nav--closed .main-nav__close {
   display: none;
@@ -156,23 +159,23 @@ button:focus {
   background: #fff;
 }
 .intro__text-logo {
-  padding: 48px 0;
+  padding: 82px 0;
   text-align: center;
 }
 .intro__text-logo-wrapper {
   background-color: #fff;
-  background-image: url("../../img/photo-background@1x.jpg");
+  background-image: url("../img/intro-triangle-mobile.jpg"), url("../img/photo-background@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
+  background-position: center bottom, 50% 0;
+  background-size: 100% auto, 768px 389px;
 }
 .intro__slogan {
-  padding: 38px 8px;
+  padding: 42px 28px 28px 28px;
   text-align: center;
   line-height: 26px;
 }
 .intro__header {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 32px;
@@ -181,4 +184,111 @@ button:focus {
 .intro__text {
   padding: 0;
   margin: 0;
+}
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.advantages__item {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 30px 16px 28px 16px;
+  border-bottom: 1px solid #d6d6d6;
+  border-left: 20px solid #eee;
+  border-right: 20px solid #eee;
+  background-color: #eee;
+}
+.advantages__item:last-child {
+  border-bottom: none;
+}
+.advantages__title {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.advantages__number-wrapper {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 50px;
+}
+.advantages__number-wrapper:after {
+  position: relative;
+  content: '';
+  z-index: 1;
+  display: block;
+  border: 1px solid #9e9e9e;
+  top: -13px;
+}
+.advantages__number {
+  position: relative;
+  z-index: 2;
+  padding: 0 6px;
+  background: #eee;
+}
+.advantages__item--blue {
+  padding: 40px 30px 30px 30px;
+  color: #fff;
+  background: #81b3d2;
+  border: none;
+}
+.advantages__item--blue .advantages__number-wrapper:after {
+  border-color: #fff;
+}
+.advantages__item--blue .advantages__number {
+  background: #81b3d2;
+}
+.advantages__photo {
+  text-align: center;
+  line-height: 0;
+}
+.advantages__photo img {
+  width: 100%;
+  height: 100%;
+}
+.advantages__item--mobile-triangle {
+  background-image: url("../img/mobile-triagle-blue.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 68px;
+}
+.feature {
+  padding: 25px 20px 40px 20px;
+  background-color: #fff;
+}
+.feature__item {
+  position: relative;
+  padding-left: 50px;
+}
+.feature__item:last-child .feature__descr {
+  margin-bottom: 0;
+}
+.feature__title {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 15px 0;
+}
+.feature__title:before {
+  position: absolute;
+  content: '';
+  display: block;
+  left: 0;
+  top: -10px;
+  width: 40px;
+  height: 40px;
+}
+.feature__title--house:before {
+  background: url(../../img/feature__icon--house.png) no-repeat center;
+}
+.feature__title--present:before {
+  background: url(../../img/feature__icon--present.png) no-repeat center;
+}
+.feature__title--burger:before {
+  background: url(../../img/feature__icon--burger.png) no-repeat center;
+}
+.feature__descr {
+  line-height: 21px;
+  margin-bottom: 25px;
 }
