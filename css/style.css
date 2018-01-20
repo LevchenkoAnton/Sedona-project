@@ -250,6 +250,7 @@ button:focus {
 .advantages__item--mobile-triangle {
   background-image: url("../img/mobile-triagle-blue.png");
   background-repeat: no-repeat;
+  background-size: 768px 36px;
   background-position: center top;
   padding-top: 68px;
 }
@@ -280,13 +281,13 @@ button:focus {
   height: 40px;
 }
 .feature__title--house:before {
-  background: url(../../img/feature__icon--house.png) no-repeat center;
+  background: url(../img/feature__icon--house.png) no-repeat center;
 }
 .feature__title--present:before {
-  background: url(../../img/feature__icon--present.png) no-repeat center;
+  background: url(../img/feature__icon--present.png) no-repeat center;
 }
 .feature__title--burger:before {
-  background: url(../../img/feature__icon--burger.png) no-repeat center;
+  background: url(../img/feature__icon--burger.png) no-repeat center;
 }
 .feature__descr {
   line-height: 21px;
