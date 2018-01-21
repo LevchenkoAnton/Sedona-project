@@ -18,6 +18,11 @@ select:focus,
 button:focus {
   outline: none;
 }
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
 /* fonts files */
 .opn-bold {
   font-family: 'PT Sans', sans-serif;
@@ -292,4 +297,94 @@ button:focus {
 .feature__descr {
   line-height: 21px;
   margin-bottom: 25px;
+}
+.seach__content {
+  background: #fff;
+  padding: 20px 25px;
+  text-align: center;
+}
+.seach__title {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  color: #000;
+  margin-bottom: 25px;
+}
+.seach__btn {
+  display: block;
+  width: 100%;
+  padding: 30px;
+  border: none;
+  background-color: #766357;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.seach__btn:hover {
+  cursor: pointer;
+  background-color: #604e43;
+}
+.form {
+  background: #fff;
+  padding: 25px 20px 25px 20px;
+  margin: 0 auto;
+  max-width: 570px;
+}
+.form--close {
+  display: none;
+}
+.form__row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+.form__label {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 41px;
+  padding-left: 15px;
+}
+.form__input {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #f2f2f2;
+  border: none;
+}
+.form__input--date {
+  box-sizing: border-box;
+  position: relative;
+  padding: 10px;
+  padding-right: 38px;
+  width: 100%;
+}
+.form__input--date:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background: #f2f2f2 url("../img/form__icon--calendar.png") no-repeat center;
+}
+.form__btn {
+  display: block;
+  vertical-align: top;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  background: #81b3d2;
+  border: none;
+}
+.form__btn:hover {
+  background: #669ec0;
+}
+.form__btn:active {
+  background: #5496bd;
+  color: #7eb0cd;
 }
