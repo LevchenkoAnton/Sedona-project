@@ -1,5 +1,5 @@
-
 .form {
+  box-sizing: border-box;
   background: @white;
   padding: 25px 20px 25px 20px;
   margin: 0 auto;
@@ -66,5 +66,30 @@
   &__btn:active {
     background: #5496bd;
     color: #7eb0cd;
+  }
+}
+
+@media @tablet-widths {
+
+  .form {
+    padding: 50px;
+
+    &__wrapper {
+      position: absolute;
+      left: 50%;
+      width: 570px;
+      left: 50%;
+      margin-left: -285px;
+    }
+
+    &__row {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    &__input--date {
+      width: 350px;
+    }
   }
 }

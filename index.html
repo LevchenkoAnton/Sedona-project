@@ -5,6 +5,7 @@
     <title>Sedona</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,6 +23,7 @@
                     <li class="main-nav__item main-nav__item--logo">
                         <a href="#">
                             <picture>
+                                <source media="(min-width: 768px)" srcset="img/text-logo-desktop.png">
                                 <img src="img/logo-sedona@1x.png" alt="Sedona">
                             </picture>
                         </a>
@@ -43,6 +45,8 @@
             <div class="intro__text-logo-wrapper">
                 <div class="intro__text-logo">
                     <picture>
+                        <source media="(min-width: 1200px)" srcset="img/text-logo-decktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/text-logo-tablet.svg">
                         <img src="img/text-logo.svg" alt="Welcome to the gorgeus Sedona!">
                     </picture>
                 </div>
@@ -64,8 +68,9 @@
                 </div>
                 <p class="advantages__descr">СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
-            <div class="advantages__photo">
+            <div class="advantages__city">
                 <picture>
+                    <source media="(min-width: 768px)" srcset="img/photo-city_tablet.jpg">
                     <img src="img/photo-city_mobile.jpg" alt="City">
                 </picture>
             </div>
@@ -83,34 +88,39 @@
                     <p class="feature__descr">Всегда заказывайте фирменный бурге, Вы не разочаруетесь!</p>
                 </div>
             </div>
-            <div class="advantages__item advantages__item--blue">
-                <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
-                <div class="advantages__number-wrapper">
-                    <span class="advantages__number">№2</span>
+            <div class="advantages__swapper">
+                <div class="advantages__item advantages__item--blue">
+                    <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
+                    <div class="advantages__number-wrapper">
+                        <span class="advantages__number">№2</span>
+                    </div>
+                    <p class="advantages__descr">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
-                <p class="advantages__descr">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </div>
-            <div class="advantages__photo">
-                <picture>
-                    <img src="img/photo-bridge_mobile.jpg" alt="Bridge">
-                </picture>
+                <div class="advantages__bridge">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="img/photo-bridge_tablet.jpg">
+                        <img src="img/photo-bridge_mobile.jpg" alt="Bridge">
+                    </picture>
+                </div>
             </div>
             <div class="advantages__item">
-                <h3 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+                <h3 class="advantages__title">НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h3>
                 <div class="advantages__number-wrapper">
                     <span class="advantages__number">№3</span>
                 </div>
-                <p class="advantages__descr">Все достопримечательности находятся очень близко</p>
+                <p class="advantages__descr">Все достопримеча
+                    <span>-<br></span>
+                    тельности находятся очень близко</p>
             </div>
             <div class="advantages__item">
-                <h3 class="advantages__title">КРАСИВАЯ ДОРОГА</h3>
+                <h3 class="advantages__title">КРАСИВАЯ<br>ДОРОГА</h3>
                 <div class="advantages__number-wrapper">
                     <span class="advantages__number">№4</span>
                 </div>
                 <p class="advantages__descr">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
             </div>
             <div class="advantages__item">
-                <h3 class="advantages__title">МАЛО ТУРИСТОВ</h3>
+                <h3 class="advantages__title">МАЛО<br>ТУРИСТОВ</h3>
                 <div class="advantages__number-wrapper">
                     <span class="advantages__number">№5</span>
                 </div>
@@ -131,13 +141,17 @@
         </div>
         <section class="form__wrapper form--close">
             <form action="" class="form">
-                <fieldset class="form__row">
-                    <label for="date-in" class="form__label">Дата заезда:</label>
-                    <input type="date" id="date-in" class="form__input form__input--date" name="date-in" value="2017-04-24">
+                <fieldset>
+                    <div class="form__row">
+                        <label for="date-in" class="form__label">Дата заезда:</label>
+                        <input type="date" id="date-in" class="form__input form__input--date" name="date-in" value="2017-04-24">
+                    </div>
                 </fieldset>
-                <fieldset class="form__row">
-                    <label for="date-out" class="form__label">Дата выезда:</label>
-                    <input type="date" id="date-out" class="form__input form__input--date" name="date-in" value="2017-07-04">
+                <fieldset>
+                    <div class="form__row">
+                        <label for="date-out" class="form__label">Дата выезда:</label>
+                        <input type="date" id="date-out" class="form__input form__input--date" name="date-in" value="2017-07-04">
+                    </div>
                 </fieldset><!--
                 <fieldset class="form__counter">
                     <fieldset class="form__counter-item">
@@ -152,7 +166,32 @@
         </section>
     </section>
 
+    <section class="map">
+        <div class="map__wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d209069.61657943483!2d-111.53956062101375!3d35.03891516128875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0L3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC30LDQv9C-0LLQtdC00L3QuNC6INC60L7QutC-0L3QuNC90L4!5e0!3m2!1sru!2sua!4v1516636314516" width="100%" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </section>
 
+    <footer class="page-footer">
+        <div class="footer__wrapper">
+            <div class="footer__hashtag--wrapper">
+                <b class="footer__hashtag">#visitsedona</b>
+            </div>
+            <div class="footer__icons">
+                <ul class="icons__list">
+                    <li class="icons__item">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="icons__item">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="icons__item">
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="js/main.js"></script>

@@ -1,7 +1,10 @@
 .seach {
 
-  &__content {
+  &__wrapper {
     background: @white;
+  }
+
+  &__content {
     padding: 20px 25px;
     text-align: center;
   }
@@ -28,4 +31,24 @@
     cursor: pointer;
     background-color: #604e43;
   }
+}
+
+@media @tablet-widths {
+
+  .seach {
+
+    &__content {
+      display: block;
+      vertical-align: top;
+      max-width: 570px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    &__btn {
+      margin: 0 auto;
+      max-width: 570px;
+    }
+  }
+
 }

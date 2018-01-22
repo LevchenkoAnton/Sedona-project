@@ -14,7 +14,7 @@
     background-image: url("../img/intro-triangle-mobile.jpg"), url("../img/photo-background@1x.jpg");
     background-repeat: no-repeat;
     background-position: center bottom, 50% 0;
-    background-size: 100% auto, 768px 389px;
+    background-size: 100% auto, 768px 383px;
   }
 
   &__slogan {
@@ -33,5 +33,28 @@
   &__text {
     padding: 0;
     margin: 0;
+  }
+}
+
+@media @tablet-widths {
+  .intro {
+
+    &__text-logo {
+      padding-top: 72px;
+      padding-bottom: 84px;
+    }
+
+    &__text-logo-wrapper {
+      background-image: url("../img/intro-triangle-tablet.png"), url("../img/intro-dg_tablet.jpg");
+      background-size: 100% auto, 1200px 512px;
+    }
+
+    &__slogan {
+      padding: 51px 20px;
+    }
+
+    &__header {
+      font-size: 21px;
+    }
   }
 }

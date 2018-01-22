@@ -63,23 +63,82 @@
     background: @base-blue;
   }
 
-  &__photo {
+  &__city, &__bridge {
     text-align: center;
     line-height: 0;
   }
 
-  &__photo img {
+  &__city img, &__bridge img{
     width: 100%;
     height: 100%;
   }
 }
 
-.advantages {
-  &__item--mobile-triangle {
-    background-image: url("../img/mobile-triagle-blue.png");
-    background-repeat: no-repeat;
-    background-size: 768px 36px;
-    background-position: center top;
-    padding-top: 68px;
+@media @mobile-width-only {
+  .advantages {
+    &__item--mobile-triangle {
+      background-image: url("../img/mobile-triagle-blue.png");
+      background-repeat: no-repeat;
+      background-size: 768px 36px;
+      background-position: center top;
+      padding-top: 68px;
+    }
+
+    &__title br,
+    &__descr span {
+      display: none;
+    }
+  }
+}
+
+@media @tablet-widths {
+
+  .advantages {
+
+    &__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: flex-start;
+    }
+
+    &__item {
+      flex-basis: 33%;
+      flex-grow: 1;
+      padding: 45px;
+      border: none;
+    }
+
+    &__item--blue {
+      height: 256px;
+      box-sizing: border-box;
+    }
+
+    &__title {
+      font-size: 21px;
+    }
+
+    &__bridge, &__city {
+      height: 256px;
+      overflow: hidden;
+      flex-basis: 67%;
+    }
+
+    &__bridge {
+      order: -1;
+    }
+
+    &__bridge img, &__city img{
+      height: auto;
+    }
+
+    &__swapper {
+      display: flex;
+      flex-grow: 1;
+    }
+
+    &__descr {
+      margin: 0;
+    }
   }
 }
