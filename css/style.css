@@ -210,6 +210,12 @@ fieldset {
     display: none;
   }
 }
+@media (min-width: 1200px) {
+  .page-header__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
 .intro__wrapper {
   background: #fff;
 }
@@ -253,6 +259,22 @@ fieldset {
     padding: 51px 20px;
   }
   .intro__header {
+    font-size: 21px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .intro .intro__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .intro .intro__text-logo-wrapper {
+    background-image: url("../img/intro-triangle-desktop.png"), url("../img/intro-dg_desktop.jpg");
+    background-size: 100% auto, 1200px 512px;
+  }
+  .intro .intro__slogan {
+    padding: 51px 20px;
+  }
+  .intro .intro__header {
     font-size: 21px;
   }
 }
@@ -374,6 +396,15 @@ fieldset {
     margin: 0;
   }
 }
+@media (min-width: 1200px) {
+  .advantages__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .advantages__item {
+    padding: 53px 68px 60px 68px;
+  }
+}
 .feature {
   padding: 25px 20px 40px 20px;
   background-color: #fff;
@@ -492,6 +523,12 @@ fieldset {
     max-width: 570px;
   }
 }
+@media (min-width: 1200px) {
+  .seach__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
 .form {
   box-sizing: border-box;
   background: #fff;
@@ -575,9 +612,16 @@ fieldset {
     width: 350px;
   }
 }
+@media (min-width: 1200px) {
+  .map__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
 .footer__wrapper {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   text-align: center;
   padding: 30px 80px;
   background: #fff;
@@ -622,5 +666,11 @@ fieldset {
   }
   .footer__hashtag--wrapper {
     line-height: 78px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__wrapper {
+    width: 1200px;
+    margin: 0 auto;
   }
 }

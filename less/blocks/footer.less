@@ -3,6 +3,7 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     text-align: center;
     padding: 30px 80px;
     background: @white;
@@ -60,6 +61,16 @@
 
     &__hashtag--wrapper {
       line-height: 78px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .footer {
+
+    &__wrapper {
+      width: 1200px;
+      margin: 0 auto;
     }
   }
 }

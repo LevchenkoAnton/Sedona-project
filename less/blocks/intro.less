@@ -56,5 +56,29 @@
     &__header {
       font-size: 21px;
     }
+
+    @media @desktop-widths {
+      .intro {
+
+        &__wrapper {
+          width: 1200px;
+          margin: 0 auto;
+        }
+
+        &__text-logo-wrapper {
+          background-image: url("../img/intro-triangle-desktop.png"), url("../img/intro-dg_desktop.jpg");
+          background-size: 100% auto, 1200px 512px;
+        }
+
+        &__slogan {
+          padding: 51px 20px;
+        }
+
+        &__header {
+          font-size: 21px;
+        }
+      }
+    }
   }
 }
+
