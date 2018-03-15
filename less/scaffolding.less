@@ -1,16 +1,14 @@
 @import "variables.less";
 
 body {
-  line-height: 26px;
-  color: #333333;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  .opn-reg;
-  font-size: 14px;
-  text-transform: uppercase;
 
-  background-color: @body-bg;
+  .text-base;
+  line-height: 26px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: @text-base-color;
 }
 
 ul {
@@ -21,10 +19,4 @@ input, select, button{
   &:focus{
     outline: none;
   }
-}
-
-fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
 }

@@ -2,198 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sedona</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>Freshy</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,700|Montserrat:200,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="page-header">
-       <div class="page-header__wrapper">
-            <nav class="main-nav main-nav--closed">
-                <button class="main-nav__close" type="button">Закрыть меню</button>
-                <ul class="main-nav__list">
-                    <li class="main-nav__item">
-                        <a href="#">Карта штата</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Информация</a>
-                    </li>
-                    <li class="main-nav__item main-nav__item--logo">
-                        <a href="#">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="img/text-logo-desktop.png">
-                                <img src="img/logo-sedona@1x.png" alt="Sedona">
-                            </picture>
-                        </a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">фото и видео</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">гостиницы</a>
-                    </li>
-                </ul>
-            </nav>
-           <button class="page-header__open-nav">Открыть меню</button>
-       </div>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="#" class="logo">SWIEZE<span class="logo--light">RYBY</span><span class="logo--extra-light">.COM</span></a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="main-nav">
+                        <a href="#" class="main-nav__item">HOME</a>
+                        <a href="#" class="main-nav__item">O NAS</a>
+                        <a href="#" class="main-nav__item">ASORTYMENT</a>
+                        <a href="#" class="main-nav__item">WSPÓŁPRACA</a>
+                        <a href="#" class="main-nav__item">KONTAKT</a>
+                        <a href="#" class="btn">TEL. 500 110 110</a>
+                    </div>
+                </div>
+            </div><!--/row-->
+            <div class="row">
+                <div class="col">
+                    <h1 class="header__title">ŚWIEŻE RYBY</h1>
+                    <p class="header__description">Zobacz, co jeszcze oferujemy!</p>
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
     </header>
 
-    <section class="intro">
-        <div class="intro__wrapper">
-            <div class="intro__text-logo-wrapper">
-                <div class="intro__text-logo">
-                    <picture>
-                        <source media="(min-width: 1200px)" srcset="img/text-logo-decktop.svg">
-                        <source media="(min-width: 768px)" srcset="img/text-logo-tablet.svg">
-                        <img src="img/text-logo.svg" alt="Welcome to the gorgeus Sedona!">
-                    </picture>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="about__title">O NAS</h2>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie
+                        egestas massa, et sollicitudin urna mattis faucibus. Praesent sagittis laoreet est, et
+                        efficitur enim lacinia id. Aenean imperdiet diam nec efficitur commodo. Morbi at purus
+                        tempus tellus tempus placerat. Sed faucibus sed elit at lacinia. Vestibulum ante ipsum primis
+                        in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent posuere orci justo, eu
+                        fermentum quam cursus quis. Proin consequat molestie magna accumsan placerat. Nulla quis
+                        consectetur tortor. Nam viverra consectetur risus iaculis ultrices.
+                    </p>
+                    <p class="about__phone">TEL. 500 110 110</p>
+                    <a href="" class="btn about__btn">
+                        HISTORIA<br>
+                        NASZEJ FIRMY
+                    </a>
                 </div>
-            </div>
-            <div class="intro__slogan">
-                <h2 class="intro__header">Седона - небольшой городок в Аризоне,
-                    <br>заслуживающий большего!</h2>
-                <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="advantages">
-        <div class="advantages__wrapper">
-            <div class="advantages__item advantages__item--blue advantages__item--mobile-triangle">
-                <h3 class="advantages__title">НАСТОЯЩИЙ ГОРОДОК</h3>
-                <div class="advantages__number-wrapper">
-                    <span class="advantages__number">№1</span>
-                </div>
-                <p class="advantages__descr">СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            </div>
-            <div class="advantages__city">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/photo-city_tablet.jpg">
-                    <img src="img/photo-city_mobile.jpg" alt="City">
-                </picture>
-            </div>
-            <div class="feature">
-                <div class="feature__item">
-                    <h3 class="feature__title feature__title--house">Жилье</h3>
-                    <p class="feature__descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </div>
-                <div class="feature__item">
-                    <h3 class="feature__title feature__title--present">Суверниры</h3>
-                    <p class="feature__descr">Не только китайского, но и местного производства!</p>
-                </div>
-                <div class="feature__item">
-                    <h3 class="feature__title feature__title--burger">Еда</h3>
-                    <p class="feature__descr">Всегда заказывайте фирменный бурге, Вы не разочаруетесь!</p>
-                </div>
-            </div>
-            <div class="advantages__swapper">
-                <div class="advantages__item advantages__item--blue">
-                    <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
-                    <div class="advantages__number-wrapper">
-                        <span class="advantages__number">№2</span>
+                <div class="col-lg-6">
+                    <div class="about__sklep">
+                        <img class="sklep__img" src="img/market.jpg" alt="Sklep">
+                        <p class="sklep__title">NASZ SKLEP</p>
                     </div>
-                    <p class="advantages__descr">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
-                <div class="advantages__bridge">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="img/photo-bridge_tablet.jpg">
-                        <img src="img/photo-bridge_mobile.jpg" alt="Bridge">
-                    </picture>
-                </div>
-            </div>
-            <div class="advantages__item">
-                <h3 class="advantages__title">НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h3>
-                <div class="advantages__number-wrapper">
-                    <span class="advantages__number">№3</span>
-                </div>
-                <p class="advantages__descr">Все достопримеча
-                    <span>-<br></span>
-                    тельности находятся очень близко</p>
-            </div>
-            <div class="advantages__item">
-                <h3 class="advantages__title">КРАСИВАЯ<br>ДОРОГА</h3>
-                <div class="advantages__number-wrapper">
-                    <span class="advantages__number">№4</span>
-                </div>
-                <p class="advantages__descr">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
-            </div>
-            <div class="advantages__item">
-                <h3 class="advantages__title">МАЛО<br>ТУРИСТОВ</h3>
-                <div class="advantages__number-wrapper">
-                    <span class="advantages__number">№5</span>
-                </div>
-                <p class="advantages__descr">Большинство едет в гранд каньон и толпится там</p>
-            </div>
-        </div>
+            </div><!--/row-->
+        </div><!--/container-->
     </section>
 
-    <section class="seach">
-        <div class="seach__wrapper">
-            <div class="seach__content">
-                <h3 class="seach__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
-                <p class="seach__descr">
-                    Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне
-                </p>
-            </div>
-            <button class="seach__btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-        </div>
-        <section class="form__wrapper form--close">
-            <form action="" class="form">
-                <fieldset>
-                    <div class="form__row">
-                        <label for="date-in" class="form__label">Дата заезда:</label>
-                        <input type="date" id="date-in" class="form__input form__input--date" name="date-in" value="2017-04-24">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div class="form__row">
-                        <label for="date-out" class="form__label">Дата выезда:</label>
-                        <input type="date" id="date-out" class="form__input form__input--date" name="date-in" value="2017-07-04">
-                    </div>
-                </fieldset><!--
-                <fieldset class="form__counter">
-                    <fieldset class="form__counter-item">
-                        <label for="counter-adult" class="form__label">Взрослые:</label>
-                        <button class="form__icon&#45;&#45;minus" type="button" tabindex="-1">-</button>
-                        <input type="text" class="form__input form__input-counter" id="counter-adult" name="counter-adult" value="2">
-                        <button class="form__icon&#45;&#45;plus" type="button" tabindex="-1">+</button>
-                    </fieldset>
-                </fieldset>-->
-                <button class="form__btn" type="submit">Найти</button>
-            </form>
-        </section>
+    <section class="cooperation">
+        <div class="container">
+            <div class="row justify-content-sm-center">
+                <div class="col-sm-6 col-lg-4   cooperation__item">
+                    <div class="cooperation__img cooperation__img--catering"></div>
+                    <h3 class="cooperation__title">CATERING</h3>
+                    <p class="cooperation__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie egestas massa, et
+                        sollicitudin urna mattis faucibus. Praesent sagittis laoreet est, et efficitur enim lacinia id.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-lg-4   cooperation__item">
+                    <div class="cooperation__img cooperation__img--fish"></div>
+                    <h3 class="cooperation__title">SPRZEDAŻ</h3>
+                    <p class="cooperation__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie egestas massa, et
+                        sollicitudin urna mattis faucibus. Praesent sagittis laoreet est, et efficitur enim lacinia id.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-lg-4   cooperation__item">
+                    <div class="cooperation__img cooperation__img--shrimp"></div>
+                    <h3 class="cooperation__title">DOSTAWY</h3>
+                    <p class="cooperation__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie egestas massa, et
+                        sollicitudin urna mattis faucibus. Praesent sagittis laoreet est, et efficitur enim lacinia id.
+                    </p>
+                </div>
+            </div><!--/row-->
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="btn cooperation__btn">
+                        SPRAWDŹ<br>
+                        MOŻLIWOŚCI
+                    </a>
+                </div>
+            </div><!-- /row -->
+        </div><!--/container-->
     </section>
 
-    <section class="map">
-        <div class="map__wrapper">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d209069.61657943483!2d-111.53956062101375!3d35.03891516128875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0L3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC30LDQv9C-0LLQtdC00L3QuNC6INC60L7QutC-0L3QuNC90L4!5e0!3m2!1sru!2sua!4v1516636314516" width="100%" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <footer class="page-footer">
-        <div class="footer__wrapper">
-            <div class="footer__hashtag--wrapper">
-                <b class="footer__hashtag">#visitsedona</b>
-            </div>
-            <div class="footer__icons">
-                <ul class="icons__list">
-                    <li class="icons__item">
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="icons__item">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li class="icons__item">
-                        <a href="#"><i class="fa fa-youtube-play"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
 
 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
